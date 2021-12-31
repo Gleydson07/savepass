@@ -39,7 +39,6 @@ export function Home() {
   }
 
   function handleFilterLoginData() {
-    console.log(searchText, data)
     const loginFilttered = data.filter(item => item.service_name.includes(searchText));
     setSearchListData(loginFilttered);
   }
