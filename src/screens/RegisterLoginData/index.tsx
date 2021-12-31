@@ -42,7 +42,6 @@ export function RegisterLoginData() {
   });
 
   async function handleRegister(formData: FormData) {
-    console.log(formData)
     const newLoginData = {
       id: String(uuid.v4()),
       ...formData
